@@ -300,7 +300,6 @@ func (d *Driver) Create() error {
 			return errors.Wrap(err, "could not read ssh public key")
 		}
 
-		log.Debugf("BUMBUM %s", buf)
 		client := d.getClient()
 
 		// Use machine name as label for API's key
@@ -322,6 +321,7 @@ func (d *Driver) Create() error {
 		d.SSHKeyID = keyIDString
 
 		sLabels = append(sLabels, d.SSHKeyID)
+
 	} else {
 
 		sLabels = append(sLabels, d.SSHKeyID)
