@@ -13,8 +13,15 @@ You can find pre-compiled binaries [here](http://downloads.cherryservers.com/oth
 
 You need to download appropriate driver to your PATH location, for example:
 
+
 ```bash
-wget http://downloads.cherryservers.com/other/docker-machine-driver/mac/docker-machine-driver-cherryservers -O /usr/local/bin/docker-machine-driver-cherryservers
+# MAC
+wget http://downloads.cherryservers.com/other/docker-machine-driver/mac/docker-machine-driver-cherryservers \
+    -O /usr/local/bin/docker-machine-driver-cherryservers
+
+# LINUX
+wget http://downloads.cherryservers.com/other/docker-machine-driver/linux/docker-machine-driver-cherryservers \
+    -O /usr/local/bin/docker-machine-driver-cherryservers
 chmod +x /usr/local/bin/docker-machine-driver-cherryservers
 ```
 
@@ -35,7 +42,7 @@ In this case your public SSH key will be uploaded to client portal and added to 
 ### Using existing key in client portal
 
 ```bash
-$ docker-machine --debug create -d cherryservers \
+$ docker-machine create -d cherryservers \
 	--cherryservers-hostname "hostname.host.com" \
 	--cherryservers-project-id "79813" \
 	--cherryservers-auth-token "bnRfaWQiOjQ5Nzk3LCJpYXQiOjE1NjM1MjMyNzR9.iUCq4JxHYjXu" \
@@ -49,7 +56,7 @@ In that case you public key won't be uploaded to portal but existing key will be
 ### Generating new key pair
 
 ```bash
-$ docker-machine --debug create -d cherryservers \
+$ docker-machine create -d cherryservers \
 	--cherryservers-hostname "hostname.host.com" \
 	--cherryservers-project-id "79813" \
 	--cherryservers-auth-token "bnRfaWQiOjQ5Nzk3LCJpYXQiOjE1NjM1MjMyNzR9.iUCq4JxHYjXu" \
