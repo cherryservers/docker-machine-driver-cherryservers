@@ -69,7 +69,7 @@ In that case new SSH keypair will be generated ant new public key will be upload
 | **`--cherryservers-auth-token`**          | `CHERRYSERVERS_AUTH_TOKEN`                | -                          |
 | `--cherryservers-project-id`              | `CHERRYSERVERS_PROJECT_ID`                | -                          |
 | `--cherryservers-hostname`                | `CHERRYSERVERS_HOSTNAME`                  | -                          |
-| ``--cherryservers-existing-ssh-key-path`  | `CHERRYSERVERS_EXISTING_SSH_KEY_PATH`     | -                          |
+| `--cherryservers-existing-ssh-key-path`   | `CHERRYSERVERS_EXISTING_SSH_KEY_PATH`     | -                          |
 | `--cherryservers-existing-ssh-key-label`  | `CHERRYSERVERS_EXISTING_SSH_KEY_LABEL`    | -                          |
 | `--cherryservers-region`                  | `CHERRYSERVERS_REGION`                    | `EU-East-1`                |
 | `--cherryservers-image`                   | `CHERRYSERVERS_IMAGE`                     | `Ubuntu 16.04 64bit`       |
