@@ -11,6 +11,14 @@ and pass that to `docker-machine create` with the `--cherryservers-auth-token` o
 
 You can find pre-compiled binaries [here](http://downloads.cherryservers.com/other/docker-machine-driver/).
 
+You need to download appropriate driver to your PATH location, for example:
+
+```bash
+wget http://downloads.cherryservers.com/other/docker-machine-driver/mac/docker-machine-driver-cherryservers -O /usr/local/bin/docker-machine-driver-cherryservers
+chmod +x /usr/local/bin/docker-machine-driver-cherryservers
+```
+
+
 ## Usage
 
 ```bash
